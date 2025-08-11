@@ -125,7 +125,8 @@ Looking at the stat that correlates the most to winning, DRtg (Defensive Rating)
 
 Another notable stat is that the minutes played is negatively correlated to winning. At first the logical statement to make is that these players are so cheeks that when they spend time on the court, they are actively dragging the team down. However, from context we know that this is incorrect. During the regular season, teams tend to sit star players out early when winning by a large margin to reduce likelihood of injury. Therefore the correct statement to make here is that rather than contributing to winning by playing less, they tend to play less when winning.
 
-
+| SGA Time vs Wins | Jokic Time vs Wins |
+|---------|---------|
 | ![SGA minutes vs winning]({{ '/assets/graphs/the_flawed_stats_of_mvp_arguments/sga_minutes.png' | relative_url }}) | ![Jokic minutes vs winning]({{ '/assets/graphs/the_flawed_stats_of_mvp_arguments/jokic_minutes.png' | relative_url }}) |
 |---------|---------|
 
