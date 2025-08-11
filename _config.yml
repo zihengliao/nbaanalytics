@@ -40,3 +40,6 @@ defaults:
       type: post
     values:
       tags: Other
+
+url: "https://github.com/zihengliao.github.io"
+baseurl: "/nbaanalytics"
