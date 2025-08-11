@@ -118,7 +118,7 @@ Looking at the stat that correlates the most to winning, DRtg (Defensive Rating)
 
 | Defensive Rating | Offensive Rating |
 |---------|---------|
-| ![SGA drtg vs winning]({{'graphs/the_flawed_stats_of_mvp_arguments/sga_drtg.png' | graphs/the_flawed_stats_of_mvp_arguments/sga_drtg.png}}) | ![SGA ortg vs winning](graphs/the_flawed_stats_of_mvp_arguments/sga_ortg.png) |
+| ![SGA drtg vs winning]({{'2025-08-09/the_flawed_stats_of_mvp_arguments/sga_drtg.png' | the_flawed_stats_of_mvp_arguments/sga_drtg.png}}) | ![SGA ortg vs winning](graphs/the_flawed_stats_of_mvp_arguments/sga_ortg.png) |
 | ![Jokiv drtg vs winning](graphs/the_flawed_stats_of_mvp_arguments/nikola_jokic_drtg.png) | ![Jokic minutes vs winning](graphs/the_flawed_stats_of_mvp_arguments/jokic_ortg.png) |
 
 <br>
