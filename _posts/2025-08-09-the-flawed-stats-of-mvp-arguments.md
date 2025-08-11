@@ -1,13 +1,21 @@
-## The 2024-2025 season MVP was robbed from Nikola Jokic
+## The Flawed Stats of MVP Arguments
 
 
-Let’s begin by defining what MVP means as the definition tends to be subjective in each conversation. In this article, the MVP will be defined as the Most Valuable Player in the league, meaning that the player is able to influence winning or losing the most in the league.
+Let’s begin by defining what MVP means as the definition tends to be subjective in each conversation. In this article, the MVP will be defined as the Most Valuable Player in the league, meaning that the individual player is able to influence winning the most in the league.
 
-A common tool that is used in debates to determine MVPs tend to be stats. We tend to look at stats in the upper percentile to even qualify for the MVP. For example, in the 2024-2025 NBA season, a common stat that would be brought up would be SGA led the league in scoring with 32.7PPG which ultimately contributed to the decision of him selected for 24/25 MVP.
+A common tool that is used in debates to determine MVPs tend to be stats. We tend to look at stats in the upper percentile to even qualify for the MVP. For example, in the 2024-2025 NBA season, a common stat that would be brought up would be SGA led the league in scoring with 32.7PPG which ultimately contributed to the decision of him selected for 2024-2025 MVP.
 
-Diving further into the 24/25 season, the MVP debate commonly landed between Jokic and Shai with the comparison of stats to back up the decision to choose one over the other. However, this system of comparison is ultimately flawed when it comes to dictating value on the floor, as inherently each metric holds a different weighting of importance when it comes to its contribution to winning. For example, one point does not necessarily equate to a steal and by having a large amount of steals, does that contribute to winning as much as having a large amount of points.
+Diving further into the 2024-2025 season, the MVP debate commonly landed between Jokic and Shai with the comparison of stats to back up the decision to choose one over the other. 
 
-The easiest way to determine the effect of a stat on winning is to identify the correlation between them. 
+However, this system of comparison is ultimately flawed when it comes to dictating value on the floor, as each metric inherently holds a different weighting of importance when it comes to its contribution to winning. For example, one point does not necessarily equate to a steal and by having a large amount of steals, does that contribute to winning as much as having a large amount of points.
+
+The easiest way to determine what stat to focus on is by identifying the correlation between the stat and winning for a particular player.
+
+Why not find the correlation for stats across the whole league you might ask. 
+
+The answer is because the value each stat is different across players and their positions. For example a pass from Jokic (a play maker) is different to a pass from Michael Porter Junior (a shooter who passes because they got blitzed/doubled). Thus by aggregating the entire league, we lose the intracacies of each player.
+
+<br>
 
 Using the below formula for point biserial correlation:
 
@@ -18,9 +26,9 @@ $$
 **Where:**
 
 - $r_{pb}$ = the correlation coefficient  
-- $M_1$ = the mean of the metric when there is a win  
-- $M_0$ = the mean of the metric when there is a loss  
-- $s_n$ = standard deviation of the population  
+- $M_1$ = the mean of the particular stat when there is a win  
+- $M_0$ = the mean of the particular stat when there is a loss  
+- $s_n$ = standard deviation of the stat regardless of win / loss  
 - $n_1$ = number of datapoints given a win  
 - $n_0$ = number of datapoints given a loss  
 - $n_2$ = total number of datapoints 
@@ -28,7 +36,7 @@ $$
 The output $r_{pb}$ will be a range from $[-1, 1]$ where $-1$ means it is negatively correlated, a result of $1$ means it is positively correlated and $0$ means there is no correlation at all.
 <br>
 
-The correlation between commonly used stats and winning of the 2 MVP candidates of the 24/25 season:
+The correlation between commonly used stats and winning of the 2 MVP candidates of the 2024-2025 season:
 
 | Stat  | Shai Gilgeous-Alexander | Nikola Jokic |
 |-------|-------------------------|--------------|
@@ -104,11 +112,22 @@ There is a lot to break down, so we will only touch on distinguishing features.
 
 What immediately comes to my attention is the difference in correlation of USG% from the 2 players.
 
-Nikola Jokic has negatively correlating USG% whilst SGA is positively correlated.
+Nikola Jokic has a negatively correlating USG% whilst SGA is positively correlated. This ultimately comes down to the difference in playstyles with Nikola being predominately a playmaking big man whilst SGA is a score dominant point guard. Thus when we see the two at their most effective, one will be less ball dominant, setting up plays for their teammates whilst the other will demand more of the ball to make an impact.
 
-This ultimately comes down to the difference in playstyles with Nikola being predominately a playmaking big man whilst SGA is a score dominant point guard. Thus when we see the two at their most effective, one will be less dominant, setting up plays for their teammates whilst the other will demand more from the ball.
+Looking at the stat that correlates the most to winning, DRtg (Defensive Rating) and its close cousin, ORtg (Offensive Rating). For both players, reducing the amount of the opposing team's points is more impactful than scoring more points. Maybe Nico Harrison was onto something when he said "defence wins championships".
 
-Another noticeable stat to see is that minutes played is negatively correlated to winning. At first the logical statement to make is that these players are so cheeks that when they spend time on the court, they are actively dragging the team down. However, from context we know that this is incorrect. During the regular season, teams tend to sit star players out early when winning by a large margin to reduce likelihood of injury. Therefore the correct statement to make here is that rather than contributing to winning by playing less, they tend to play less when winning.
+| Defensive Rating | Offensive Rating |
+|---------|---------|
+| ![SGA drtg vs winning](graphs/the_flawed_stats_of_mvp_arguments/sga_drtg.png) | ![SGA ortg vs winning](graphs/the_flawed_stats_of_mvp_arguments/sga_ortg.png) |
+| ![Jokiv drtg vs winning](graphs/the_flawed_stats_of_mvp_arguments/nikola_jokic_drtg.png) | ![Jokic minutes vs winning](graphs/the_flawed_stats_of_mvp_arguments/jokic_ortg.png) |
+
+<br>
+
+Another notable stat is that the minutes played is negatively correlated to winning. At first the logical statement to make is that these players are so cheeks that when they spend time on the court, they are actively dragging the team down. However, from context we know that this is incorrect. During the regular season, teams tend to sit star players out early when winning by a large margin to reduce likelihood of injury. Therefore the correct statement to make here is that rather than contributing to winning by playing less, they tend to play less when winning.
+
+
+| ![SGA minutes vs winning](graphs/the_flawed_stats_of_mvp_arguments/sga_minutes.png) | ![Jokic minutes vs winning](graphs/the_flawed_stats_of_mvp_arguments/jokic_minutes.png) |
+|---------|---------|
 
 <br>
 
