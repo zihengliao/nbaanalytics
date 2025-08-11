@@ -42,4 +42,4 @@ defaults:
       tags: Other
 
 url: "https://github.com/zihengliao.github.io"
-baseurl: ""
+baseurl: "/nbaanalytics"
